@@ -1,4 +1,5 @@
-![gif](./assets/Gravando%202024-11-08%20094204.gif)
+<img src="./assets/gif.gif" width="600" />
+
 
 Tela inicial
 ![gif](./assets/telaInicial.png)
