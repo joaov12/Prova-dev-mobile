@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="                     Nota Fiscal Goiana"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#4CAF50"
+            android:layout_gravity="center"
+            android:layout_marginBottom="16dp"/>
+
+        <ImageView
+            android:id="@+id/bandeiraImageView"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:src="@drawable/goias"
+            android:contentDescription="Bandeira do Estado de Goiás" />
+
+        <TextView
+            android:id="@+id/cpfTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CPF: "
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/valorTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Valor disponível: "
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/semestreTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Semestre: "
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Banco:"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp" />
+
+        <Spinner
+            android:id="@+id/bancoSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tipo de Conta:"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp" />
+
+        <Spinner
+            android:id="@+id/tipoContaSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Agência:"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/agenciaEditText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:hint="Número da Agência"
+                android:inputType="number" />
+
+            <Space
+                android:layout_width="8dp"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/agenciaDigitoEditText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Dígito"
+                android:inputType="number" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Conta:"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/contaEditText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:hint="Número da Conta"
+                android:inputType="number" />
+
+            <Space
+                android:layout_width="8dp"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/contaDigitoEditText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Dígito"
+                android:inputType="number" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/processButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Solicitar saque"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#FFC107"/>
+
+
+        <TextView
+            android:id="@+id/resultadoTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="                                          Resumo"
+            android:textSize="16sp"
+            android:textColor="@android:color/black" />
+
+
+
+    </LinearLayout>
+</ScrollView>
