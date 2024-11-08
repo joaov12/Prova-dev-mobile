@@ -1,4 +1,4 @@
-<img src="./assets/gif.gif" width="600" />
+<center><img src="./assets/gifprova.gif" width="300" /></center>
 
 
 Tela inicial
